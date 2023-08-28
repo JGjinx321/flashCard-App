@@ -1,21 +1,10 @@
 const term = document.querySelector('.term');
 const definition = document.querySelector('.definition');
 
-const Chapter1 = document.querySelector('.Chapter1');
-const Chapter2 = document.querySelector('.Chapter2');
-const Chapter3 = document.querySelector('.Chapter3');
-const Chapter4 = document.querySelector('.Chapter4');
-const Chapter5 = document.querySelector('.Chapter5');
-const Chapter6 = document.querySelector('.Chapter6');
-const Chapter7 = document.querySelector('.Chapter7');
-const Chapter8 = document.querySelector('.Chapter8');
-const Chapter9 = document.querySelector('.Chapter9');
-const Chapter10 = document.querySelector('.Chapter10');
-
 const checkButton = document.querySelector('.check');
 const nextbutton = document.querySelector('.Next');
 
-chapter1 = {
+words = {
     Project_Charter: "The start document of a project. Lists details such as signature, sponsor, and project manager name.",
     Sponsor: "The person championing the project. This includes marketing, roadblock clearance, and connections person.",
     Benefit_Measurement_Methods: "Provides a means to compare the benefits obtained from project requests by evaluating them using the same criteria. Four common benefit measurement methods are cost-benefit analysis, scoring model, payback period, and economic model.",
@@ -44,7 +33,7 @@ chapter1 = {
     Scoring_Model: "A predefined list of criteria against which each project is rated."
 }
 
-data = Object.entries(chapter1)
+data = Object.entries(words)
 
 function getRandomWord() {
     randomTerm = data[Math.floor(Math.random() * data.length)]
